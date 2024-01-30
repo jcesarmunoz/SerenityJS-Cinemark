@@ -1,9 +1,9 @@
 # README
 
-Pruebas automatizadas en dispositivos moviles usando la herramienta SerenityJS con Screenplay
+Pruebas automatizadas en web usando la herramienta SerenityJS con Screenplay
 
 > **Soporta automatización**:
-> * Movil
+> * Web
 
 ## Herramientas y Complementos
 
