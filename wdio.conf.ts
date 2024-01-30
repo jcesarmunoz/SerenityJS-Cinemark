@@ -96,7 +96,7 @@ export const config: WebdriverIOConfig = {
                 '--allow-file-access',
                 '--disable-infobars',
                 '--ignore-certificate-errors',
-                '--headless',
+                //'--headless',
                 '--disable-gpu',
                 '--window-size=1024x768',
             ]
@@ -134,7 +134,7 @@ export const config: WebdriverIOConfig = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://the-internet.herokuapp.com/',
+    baseUrl: 'https://cinemark-colombia-dev-staging-lqm19h4cv-cinemark-colombia.vercel.app',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

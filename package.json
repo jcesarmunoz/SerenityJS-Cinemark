@@ -7,6 +7,7 @@
     "postinstall": "serenity-bdd update",
     "clean": "rimraf target",
     "test": "failsafe clean test:execute test:report",
+    "test:executeTag": "wdio wdio.conf.ts clean --cucumberOpts.tags",
     "test:execute": "wdio wdio.conf.ts",
     "test:report": "serenity-bdd run --features ./features",
     "start": "mkdirp target/site/serenity && npx http-server -p 8080 target/site/serenity -s -o",
@@ -31,7 +32,7 @@
   },
   "homepage": "https://serenity-js.org",
   "engines": {
-    "node": "^18.12 || ^20"
+    "node": "^18.12 || ^20.11"
   },
   "dependencies": {
     "@cucumber/cucumber": "^10.3.1",

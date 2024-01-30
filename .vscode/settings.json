@@ -1,5 +1,5 @@
 {
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
   "workbench.startupEditor": "readme",
   "workbench.tree.indent": 12,
   "cucumber.features": [

@@ -1,0 +1,27 @@
+import { By, PageElement} from '@serenity-js/web';
+
+export const RegisterPage = {
+    typePerson: () => PageElement.located(By.id('register_EducationLevel')).describedAs('list type person'),
+    typeDocument: () => PageElement.located(By.id('register_HouseholdIncome')).describedAs('list type document'),
+    typeDocumentList: (value:string) => PageElement.located(By.id('register_HouseholdIncome')).describedAs('list type document'),
+    names: () => PageElement.located(By.id('register_FirstName')).describedAs('input names'),
+    lastName: () => PageElement.located(By.id('register_LastName')).describedAs('input last name'),
+    gender: () => PageElement.located(By.id('register_Gender')).describedAs('list select gender'),
+    documentNumber: () => PageElement.located(By.id('register_NationalID')).describedAs('input document number'),
+    birthDate: () => PageElement.located(By.xpath("//input[contains(@class,'calendar-picker')]")).describedAs('input birth date'),
+    mobileNumber: () => PageElement.located(By.id('register_MobilePhone')).describedAs('input mobile phone'),
+    address: () => PageElement.located(By.id('register_Address1')).describedAs('input addresss'),
+    email: () => PageElement.located(By.id('register_Email')).describedAs('input email'),
+    confirmEmail: () => PageElement.located(By.id('register_confirmEmail')).describedAs('input confirm email'),
+    password: () => PageElement.located(By.id('register_Password')).describedAs('input password'),
+    confirmPassword: () => PageElement.located(By.id('register_confirmPassword')).describedAs('input confirm password'),
+    city: () => PageElement.located(By.id('register_PreferredComplexCity')).describedAs('list select city'),
+    theater: () => PageElement.located(By.id('register_PreferredComplex')).describedAs('list select theater'), 
+    acceptTerms:() => PageElement.located(By.id('register_termines')).describedAs('checkbox accept terms and conditions'),
+    genericListRegister: (value:string) => PageElement.located(By.xpath(`//*[contains(@class,'ant-select-dropdown-menu-item') and contains(text(),'${value}')]`)).describedAs('list type person'),
+    createAccount: () => PageElement.located(By.xpath('//button[@title="Crear cuenta"]')).describedAs('create account button'),
+    notificacionCompletedRegistration: () => PageElement.located(By.xpath('(//div[contains(@class,"text-center")]//h3)[2]')).describedAs('text success register'),
+    continueFinishedRegister: () => PageElement.located(By.xpath('//button[@title="continuar"]')).describedAs('continue button'),
+    aceptar: () => PageElement.located(By.xpath('//button[@title="Aceptar"]')).describedAs('test button'),
+    txtTxt: () => PageElement.located(By.xpath('//div[contains(@class,"text-center")]//h3')).describedAs('test button'),
+}
